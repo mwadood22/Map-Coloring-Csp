@@ -11,7 +11,7 @@ This repository contains an implementation of the Map Coloring Constraint Satisf
 ## Project Structure
 
 - `main.py`: Core implementation of the backtracking algorithm for solving the CSP.
-- `util.py`: Contains utility functions for handling constraints and displaying the board.
+- `util.py`: Contains utility functions for handling constraints.
 
 ## Prerequisites
 
@@ -56,19 +56,6 @@ from util import constraint
 x, y = symbols('x y')
 expr = (x + y > 5)
 custom_constraint = constraint('ExampleConstraint', expr)
-```
-
-### Display Board Function
-
-The `displayBoard` function visualizes a chessboard with specific placements.
-
-#### Example:
-```python
-from util import displayBoard
-
-locations = [(0, 0), (1, 1)]  # Coordinates of queens
-shape = 3  # 3x3 board
-displayBoard(locations, shape)
 ```
 
 ## Dependencies
